@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/goblin_background"
-    tools:context=".activity_home">
+    tools:context=".HomeActivity">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -58,7 +58,7 @@
         app:layout_constraintHorizontal_bias="0.862"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.170"
         app:srcCompat="@drawable/budgeting_icon"
         tools:ignore="ContentDescription" />
 
@@ -76,7 +76,7 @@
         app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
+        app:layout_constraintVertical_bias="0.23"
         tools:ignore="TextSizeCheck,VisualLintOverlap" />
 
     <TextView
@@ -90,10 +90,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.381"
+        app:layout_constraintHorizontal_bias="0.370"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
+        app:layout_constraintVertical_bias="0.228"
         tools:ignore="TextSizeCheck,VisualLintOverlap" />
 
     <ImageView
@@ -102,10 +102,10 @@
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
+        app:layout_constraintHorizontal_bias="0.62"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/convert_icon"
         tools:ignore="ContentDescription" />
 
@@ -118,7 +118,7 @@
         app:layout_constraintHorizontal_bias="0.142"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.170"
         app:srcCompat="@drawable/send_money_icon"
         tools:ignore="ContentDescription" />
 
@@ -128,10 +128,10 @@
         android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.393"
+        app:layout_constraintHorizontal_bias="0.380"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.17"
         app:srcCompat="@drawable/cashin_icon"
         tools:ignore="ContentDescription" />
 
@@ -142,10 +142,10 @@
         android:contentDescription="@string/todo5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.74"
+        app:layout_constraintHorizontal_bias="0.716"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.188"
         app:srcCompat="@drawable/line"
         tools:ignore="ImageContrastCheck" />
 
@@ -159,7 +159,7 @@
         app:layout_constraintHorizontal_bias="0.284"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.188"
         app:srcCompat="@drawable/line"
         tools:ignore="ImageContrastCheck" />
 
@@ -174,10 +174,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintHorizontal_bias="0.613"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
+        app:layout_constraintVertical_bias="0.229"
         tools:ignore="TextSizeCheck,VisualLintOverlap" />
 
     <TextView
@@ -191,10 +191,10 @@
         android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintHorizontal_bias="0.905"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.258"
+        app:layout_constraintVertical_bias="0.23"
         tools:ignore="TextSizeCheck,VisualLintOverlap" />
 
     <ImageView
@@ -204,10 +204,10 @@
         android:contentDescription="@string/todo6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.196"
+        app:layout_constraintVertical_bias="0.188"
         app:srcCompat="@drawable/line"
         tools:ignore="ImageContrastCheck" />
 
@@ -274,16 +274,18 @@
                     tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
 
                 <ImageView
+                    android:id="@+id/eye"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1.3in"
                     android:layout_marginTop=".75in"
                     android:contentDescription="@string/todo1"
                     android:elevation="3dp"
-                    app:srcCompat="@drawable/eye"
+                    app:srcCompat="@drawable/open_eye"
                     tools:ignore="InOrMmUsage" />
 
                 <TextView
+                    android:id="@+id/moneybalance"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginTop=".7in"
@@ -362,6 +364,7 @@
         </LinearLayout>
     </ScrollView>
 
+
     <com.google.android.material.bottomappbar.BottomAppBar
         android:id="@+id/bottomAppBar"
         android:layout_width="452dp"
@@ -393,14 +396,13 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5.3in"
         android:layout_marginStart="0.1in"
+        android:layout_marginBottom="0.1in"
         android:background="#03FFFFFF"
         android:contentDescription="@string/home"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/menu_home"
         tools:ignore="InOrMmUsage,MissingConstraints,VisualLintBounds" />
 
