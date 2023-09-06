@@ -47,7 +47,8 @@
         app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.113" />
+        app:layout_constraintVertical_bias="0.113"
+        tools:ignore="VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -211,28 +212,28 @@
         app:srcCompat="@drawable/line"
         tools:ignore="ImageContrastCheck" />
 
-    <ScrollView
-        android:id="@+id/scrollView2"
-        android:layout_width="412dp"
-        android:layout_height="657dp"
-        android:orientation="vertical"
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="413dp"
+        android:layout_height="511dp"
+        android:fillViewport="true"
         android:overScrollMode="never"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="TextSizeCheck">
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0">
 
+        <!-- LinearLayout to hold the scrollable content -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <!-- Your fixed-height CardView -->
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="177dp"
+                android:layout_height="match_parent"
                 app:cardBackgroundColor="@android:color/transparent"
                 app:cardCornerRadius="0dp"
                 app:cardElevation="0dp"
@@ -287,7 +288,7 @@
                 <TextView
                     android:id="@+id/moneybalance"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="442dp"
                     android:layout_marginTop=".7in"
                     android:fontFamily="@font/poppins"
                     android:paddingStart="1.28in"
@@ -296,29 +297,21 @@
                     android:textColor="@color/white"
                     android:textSize="28sp"
                     tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@android:color/transparent"
-                app:cardCornerRadius="0dp"
-                app:cardElevation="0dp"
-                app:cardPreventCornerOverlap="false"
-                app:cardUseCompatPadding="false">
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="187dp"
-                    android:layout_marginTop=".3in"
+                    android:layout_marginTop="1.5in"
                     android:contentDescription="@string/todo1"
                     android:elevation="3dp"
-                    app:srcCompat="@drawable/news_1" />
+                    app:srcCompat="@drawable/news_1"
+                    tools:ignore="InOrMmUsage" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart=".2in"
+                    android:layout_marginTop="1.2in"
                     android:fontFamily="@font/poppins"
                     android:paddingEnd="0in"
                     android:text="@string/get_start"
@@ -328,10 +321,11 @@
                     tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
 
                 <ImageView
-                    android:layout_width="150dp"
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
                     android:layout_height="150dp"
-                    android:layout_marginTop="1.7in"
                     android:layout_marginStart=".21in"
+                    android:layout_marginTop="3.2in"
                     android:contentDescription="@string/todo1"
                     android:elevation="3dp"
                     app:srcCompat="@drawable/news_2"
@@ -340,8 +334,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="1.7in"
                     android:layout_marginStart=".2in"
+                    android:layout_marginTop="2.9in"
                     android:fontFamily="@font/poppins"
                     android:paddingEnd="0in"
                     android:text="@string/save"
@@ -353,8 +347,8 @@
                 <ImageView
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginTop="1.7in"
-                    android:layout_marginStart="1.59in"
+                    android:layout_marginStart="1.45in"
+                    android:layout_marginTop="3.2in"
                     android:contentDescription="@string/todo1"
                     android:elevation="3dp"
                     app:srcCompat="@drawable/news_3"
@@ -362,7 +356,7 @@
 
             </androidx.cardview.widget.CardView>
         </LinearLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 
     <com.google.android.material.bottomappbar.BottomAppBar
@@ -396,15 +390,17 @@
         android:id="@+id/imageButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0.1in"
-        android:layout_marginBottom="0.1in"
         android:background="#03FFFFFF"
         android:contentDescription="@string/home"
-        app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4.5in"
         app:srcCompat="@drawable/menu_home"
         tools:ignore="InOrMmUsage,MissingConstraints,VisualLintBounds" />
 
 
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
