@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">goblin</string>
+    <string name="goblin">GOBLIN</string>
+
+    <string name="todo">TODO</string>
+
+
+    <string name="gc">TODO</string>
+    <string name="gg">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="todo4">TODO</string>
+    <string name="todo5">TODO</string>
+    <string name="todo6">TODO</string>
+    <string name="todo7">TODO</string>
+
+
+    <string name="todo8">TODO</string>
+
+    //LABELS
+
+
+    //GETTINGSTARTED 1 TEXT
+    <string name="gs1_started">Let\'s get started</string>
+    <string name="gs1_text">Goblin is a budget management solution that helps you take control of your finances.</string>
+
+    //GETTINGSTARTED 2 TEXT
+    <string name="gs2_stay">Stay thrifty with style</string>
+    <string name="gs2_text">Spend your money wisely and avoid unnecessary expenses.</string>
+
+    //GETTINGSTARTED 3 TEXT
+    <string name="gs3_budgeting">Budgeting Made Easy</string>
+    <string name="gs3_text">Enjoy our user-friendly interface and maximize your budgeting and saving experience.</string>
+
+    //HOME TEXT
+    <string name="hm_welcome">Welcome!</string>
+    <string name="hm_send">Send Money</string>
+    <string name="hm_cashin">Cash In</string>
+    <string name="hm_convert">Convert</string>
+    <string name="hm_budgeting">Budgeting</string>
+    <string name="hm_wallet">Wallet Balance:</string>
+    <string name="hm_pesos">Php</string>
+    <string name="hm_money">5,000.00</string>
+    <string name="hm_start">Getting Started</string>
+    <string name="hm_home">Home</string>
+    <string name="hm_save">Save Tips</string>
+
+    //SETTINGS
+    <string name="s_account">Account</string>
+    <string name="s_settings">Settings</string>
+    <string name="s_refer">Refer a Friend</string>
+    <string name="s_pro">Goblin Pro</string>
+    <string name="s_logout">Logout</string>
+    <string name="s_back">Back</string>
+
+    //CHANGE PASSWORD
+    <string name="cp_change">Change Password</string>
+    <string name="cp_current">Current Password</string>
+    <string name="cp_newpass">New Password</string>
+    <string name="cp_confirm">Confirm New Password</string>
+    <string name="cp_entercurrent">Enter Current Password</string>
+    <string name="cp_enternew">Enter New Password</string>
+    <string name="cp_confirmnew">Confirm New Password</string>
+
+    //CHANGE PASSWORD TIPS
+    <string name="tips">Tips for a strong password</string>
+    <string name="tp1">Combine upper and lower case letters, numbers, and special characters (e.g., $, #, /, etc.).</string>
+    <string name="tp2">Keep your password at least 8 to 12 characters long.</string>
+    <string name="tp3">Avoid consecutive characters (e.g., 12345678, abcde, qwerty, etc.) or repeating characters (e.g., 1111111).</string>
+    <string name="tp4">Avoid personal info like names of friends or relatives, your birthday, or your address.</string>
+    <string name="tp5">Avoid common or obvious words (e.g., password, name, money, etc.).</string>
+    <string name="tp6">Avoid using the same password from the other accounts you own.</string>
+
+</resources>
