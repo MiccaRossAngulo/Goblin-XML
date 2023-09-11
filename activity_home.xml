@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/goblin_background"
+    tools:context=".Home">
+
+    <!-- Logo -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="112dp"
+        android:layout_height="29dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042"
+        app:srcCompat="@drawable/goblin_logo"
+        tools:ignore="ContentDescription" />
+
+    <!-- Profile -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.043"
+        app:srcCompat="@drawable/person"
+        tools:ignore="ContentDescription" />
+
+    <!-- Welcome Text -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hm_welcome"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+        tools:ignore="VisualLintOverlap" />
+
+
+    <!-- Send Money Icon -->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170"
+        app:srcCompat="@drawable/send_money_icon"
+        tools:ignore="ContentDescription" />
+
+    <!-- Send Money Text -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hm_send"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.103"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+    <!-- Line 1 -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="3dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/todo4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.284"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/line"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Cash In Icon -->
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.380"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/cashin_icon"
+        tools:ignore="ContentDescription" />
+
+    <!-- CashIn Text -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hm_cashin"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.370"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.228"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+    <!-- Line 2 -->
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="3dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/todo6"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/line"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Convert Logo -->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.17"
+        app:srcCompat="@drawable/convert_icon"
+        tools:ignore="ContentDescription" />
+
+    <!-- Convert Text -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hm_convert"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.613"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.229"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+    <!-- Line 3 -->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="3dp"
+        android:layout_height="58dp"
+        android:contentDescription="@string/todo5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/line"
+        tools:ignore="ImageContrastCheck" />
+
+    <!-- Budgeting Icon -->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.862"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.170"
+        app:srcCompat="@drawable/budgeting_icon"
+        tools:ignore="ContentDescription" />
+
+    <!-- Budgeting Text -->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="73dp"
+        android:layout_height="22dp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/hm_budgeting"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.905"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23"
+        tools:ignore="TextSizeCheck,VisualLintOverlap" />
+
+
+    <!-- Scroll View -->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:layout_constraintVertical_bias="0.0"
+        android:clipToPadding="false"
+        tools:ignore="ScrollViewCount">
+
+        <!-- Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Fixed-height CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardBackgroundColor="@android:color/transparent"
+                app:cardCornerRadius="0dp"
+                app:cardElevation="0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false">
+
+                <!-- Rectangle -->
+                <ImageView
+                    android:layout_width="350dp"
+                    android:layout_height="127dp"
+                    android:layout_margin="30dp"
+                    android:layout_marginEnd="1in"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/green_rectangle"
+                    tools:ignore="InOrMmUsage" />
+
+                <!-- Wallet Balance Text -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="84dp"
+                    android:layout_marginTop=".33in"
+                    android:fontFamily="@font/poppins"
+                    android:paddingEnd="1.2in"
+                    android:text="@string/hm_wallet"
+                    android:textAlignment="center"
+                    android:textColor="@color/green1"
+                    android:textSize="16sp"
+                    tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
+
+                <!-- Pesos -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop=".6in"
+                    android:fontFamily="@font/poppins"
+                    android:paddingEnd=".85in"
+                    android:text="@string/hm_pesos"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="13sp"
+                    tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
+
+                <!-- Eye -->
+                <ImageView
+                    android:id="@+id/eye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="1.3in"
+                    android:layout_marginTop=".75in"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/open_eye"
+                    tools:ignore="InOrMmUsage" />
+
+                <!-- 5,000 amount -->
+                <TextView
+                    android:id="@+id/moneybalance"
+                    android:layout_width="match_parent"
+                    android:layout_height="442dp"
+                    android:layout_marginTop=".7in"
+                    android:fontFamily="@font/poppins"
+                    android:paddingStart="1.28in"
+                    android:text="@string/hm_money"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="28sp"
+                    tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
+
+                <!-- Getting Started Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart=".2in"
+                    android:layout_marginTop="1.2in"
+                    android:fontFamily="@font/poppins"
+                    android:paddingEnd="0in"
+                    android:text="@string/hm_start"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
+
+                <!-- How to use goblin link -->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="187dp"
+                    android:layout_marginTop="1.5in"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/news_1"
+                    tools:ignore="InOrMmUsage" />
+
+                <!-- Save Tips Text -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart=".2in"
+                    android:layout_marginTop="2.9in"
+                    android:fontFamily="@font/poppins"
+                    android:paddingEnd="0in"
+                    android:text="@string/hm_save"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="InOrMmUsage,RtlSymmetry,VisualLintOverlap" />
+
+                <!-- Gamer's saving tips link -->
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginStart=".21in"
+                    android:layout_marginTop="3.2in"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/news_2"
+                    tools:ignore="InOrMmUsage" />
+
+                <!-- Invest your money link -->
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="1.45in"
+                    android:layout_marginTop="3.2in"
+                    android:contentDescription="@string/todo1"
+                    android:elevation="3dp"
+                    app:srcCompat="@drawable/news_3"
+                    tools:ignore="InOrMmUsage" />
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="452dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="BottomAppBar,MissingConstraints,VisualLintBottomAppBar,VisualLintBounds">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green2"
+            app:itemIconTint="@color/white"
+            app:itemTextColor="#FFFFFF"
+            app:menu="@menu/bottom_nav_menu"
+            tools:ignore="MissingConstraints,VisualLintBottomNav"
+            tools:layout_editor_absoluteX="16dp">
+
+        </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <!-- Home Button -->
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#03FFFFFF"
+        android:contentDescription="@string/hm_home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="4.5in"
+        app:srcCompat="@drawable/menu_home"
+        tools:ignore="InOrMmUsage,MissingConstraints,VisualLintBounds" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
